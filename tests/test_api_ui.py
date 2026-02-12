@@ -1,6 +1,8 @@
 import requests
 
 BASE_URL = "https://petstore.swagger.io/v2/swagger.json"
+
+
 def test_api_response():
     response = requests.get(BASE_URL)
     assert response.status_code == 200
