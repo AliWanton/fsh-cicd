@@ -19,4 +19,3 @@ def test_github_api():
 
     assert response.status_code == 200
     assert response.headers["Content-Type"].startswith("application/json")
-
