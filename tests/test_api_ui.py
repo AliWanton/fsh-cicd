@@ -6,6 +6,7 @@ def test_api_response():
     assert response.status_code == 200
     assert response.headers["Content-Type"].startswith("application/json")
 
+
 def test_swagger_ui(page):
     page.goto("https://petstore.swagger.io/")
     page.wait_for_load_state("networkidle")
